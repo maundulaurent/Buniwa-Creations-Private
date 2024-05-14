@@ -1,0 +1,120 @@
+{% extends 'Buniwa/base.html' %}
+
+{% load static %}
+
+{% block title %}Buniwa | Blog {% endblock %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="{% static 'css/login.css' %}" rel="stylesheet">
+
+</head>
+<body>
+    
+<main id="main">
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs">
+      <div class="page-header d-flex align-items-center" style="background-image: url('');">
+        <div class="container position-relative">
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-6 text-center">
+              <br><br><br>
+              <h2>The Blog</h2>
+              <p class="bellefair-font fs-6">Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav>
+        <div class="container">
+          <ol>
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li>Blog</li>
+          </ol>
+        </div>
+      </nav>
+      
+    </div><!-- End Breadcrumbs -->
+
+    <!-- ======= Blog Section ======= -->
+    <section id="blog" class="blog">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4 posts-list">
+          <!-- Loop through each card dynamically -->
+          {% for card in cards %}
+          <div class="col-xl-4 col-md-6">
+            <article>
+
+              <div class="post-img">
+<<<<<<< HEAD
+                <img src="{{ card.card_image.url }}" alt="" class="img-fluid" style="width: 355px; height: 330px;">
+              </div>
+              <p class="post-category">{{ card.category }}</p>
+              <h2 class="title">
+                <a href="blog_details" class="text-decoration-none fw-bold" >{{ card.title }}</a>
+              </h2>
+
+              <div class="d-flex align-items-center">
+                <img src="{{ card.author_image.url }}" alt="" class="img-fluid post-author-img flex-shrink-0" style="width: 50px; height: 50px;">
+=======
+                <img src="{{ card.card_image.url }}" alt="" class="img-fluid">
+              </div>
+              <p class="post-category">{{ card.category }}</p>
+              <h2 class="title">
+                <a href="blog_details" class="text-decoration-none">{{ card.title }}</a>
+              </h2>
+
+              <div class="d-flex align-items-center">
+                <img src="{{ card.author_image.url }}" alt="" class="img-fluid post-author-img flex-shrink-0">
+>>>>>>> 2a242e0ccc7c1ec90306a6f34bff775db59f3b49
+                <div class="post-meta">
+                  <p class="post-author-list">{{ card.author }}</p>
+                  <p class="post-date">
+                    <!-- <time datetime="2022-01-01">Jun 5, 2022</time> -->
+                    <time datetime="{{ card.published_date }}">{{ card.published_date }}</time>
+                  </p>
+                </div>
+              </div>
+
+            </article>
+          </div>
+          {% endfor %}
+          <!-- End post list item -->
+        </div><!-- End blog posts list -->
+
+        <div class="blog-pagination">
+          <ul class="justify-content-center">
+            <!-- <li><a href="#">--</a></li> -->
+            <li class="active"><a href="#">Bnw</a></li>
+            <!-- <li><a href="#">--</a></li> -->
+          </ul>
+        </div><!-- End blog pagination -->
+
+      </div>
+    </section><!-- End Blog Section -->
+
+
+  </main>
+
+  
+    <!-- Vendor JS Files -->
+    <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="static/vendor/aos/aos.js"></script>
+    <script src="static/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="static/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="static/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="static/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="static/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+    <script src="static/js/login.js"></script>
+
+</body>
+</html>
+
+{% endblock %}
