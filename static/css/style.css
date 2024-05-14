@@ -527,5 +527,70 @@ h4, h5, h6, .h4, .h5, .h6 {
 }
 /*** Footer End ***/
 
-/* Extas */
+
+
+/* Testimonials */
+
+
+/* Review */
+.review h3 {
+    font-size: 20px;
+  }
   
+  .review p {
+    line-height: 1.8;
+    font-style: italic;
+    color: #333333;
+  }
+  
+  .review .stars span {
+    color: #FF8803;
+  }
+  
+  .review .stars .muted {
+    color: #ccc;
+  }
+  
+  .review .review-user img {
+    width: 70px;
+    margin: 0 auto;
+  }
+  
+  /* Testimonial Carousel */
+  .testimonials-slider .swiper-pagination {
+    margin-top: 20px;
+    position: relative;
+  }
+  
+  .testimonials-slider .swiper-pagination .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    opacity: 1;
+    border: 1px solid #2d71a1;
+  }
+  
+  .testimonials-slider .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: #2d71a1;
+  }
+  
+
+
+  
+section {
+    overflow: hidden;
+  }
+  
+  .section {
+    padding: 7rem 0;
+  }
+  
+  .section-heading {
+    font-size: 3rem;
+    font-weight: 700;
+    background: linear-gradient(-45deg, #3db3c5, #274685);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+/* End Testimonials */

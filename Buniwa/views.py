@@ -41,11 +41,6 @@ def blog(request):
     cards = theBlog.objects.all()
     return render(request, "Buniwa/blog.html", {'cards': cards})
 
-
-    cards = Card.objects.all()
-    return render(request, "Buniwa/blog.html", {'cards': cards})
-
-
 def blog_details(request):
     return render(request, "Buniwa/blog_details.html")
 
@@ -72,3 +67,6 @@ def portfolio_details(request):
 def portfolio(request):
     cards = PortfolioPost.objects.all()
     return render(request, 'Buniwa/portfolio.html', {'cards': cards})
+
+def testimonial(request):
+    return render(request, 'Buniwa/testimonial.html')

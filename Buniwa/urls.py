@@ -18,6 +18,7 @@ urlpatterns = [
     path('logout',views.user_logout, name='logout'),
     path('portfolio_details',views.portfolio_details, name="portfolio_details"),
     path('portfolio',views.portfolio, name="portfolio"),
+    path('testimonial',views.testimonial, name="testimonial"),
 
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
