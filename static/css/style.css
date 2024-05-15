@@ -529,68 +529,185 @@ h4, h5, h6, .h4, .h5, .h6 {
 
 
 
+/* Testimonials  */
+
+
+
+/* disable aos animation delay on mobile devices*/
+
+@media screen and (max-width:768px) {
+    [data-aos-delay] {
+        transition-delay: 0 !important
+    }
+}
+
+/* Section */
+
+section {
+    padding: 60px 0;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.section-title {
+    text-align: center;
+    padding-bottom: 30px;
+    position: relative;
+
+}
+
+.section-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.section-title h2::after {/* used for styling a pseudo-element
+    The selector h2 targets the pseudo(::after)
+    */
+    content: "";/* Sets the content of the pseudo-element to an empty string. 
+                pseudo-elemets require some content even if it's empty, to be displayed.
+                */
+    position:absolute;/* Removes the pseudo from the normal document flow, so positions it relative to its ansestor*/
+    display: block; /* Takes the full available width, and starts on a new line */
+    width: 70px;
+    height: 3px;
+    background:#e03a3c;
+    bottom: 0;/* Positions the bottom edge of the pseudo-element to the bottom edge of it's containing block */
+    left: calc(50% - 28px)/* sets the left offset of the pseudo element. */
+}
+
+.section-title p {
+    margin-bottom: 0;
+    
+
+}
+
 /* Testimonials */
 
+.fa-spin {
+    -webkit-animation: fa-spin 2s infinite linear;
+            animation: fa-spin 2s infinite linear; }
+  
+  .fa-pulse {
+    -webkit-animation: fa-spin 1s infinite steps(8);
+            animation: fa-spin 1s infinite steps(8); }
+  
+  @-webkit-keyframes fa-spin {
+    0% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg); }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg); } }
+  
+  @keyframes fa-spin {
+    0% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg); }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg); } }
 
-/* Review */
-.review h3 {
-    font-size: 20px;
-  }
-  
-  .review p {
-    line-height: 1.8;
-    font-style: italic;
-    color: #333333;
-  }
-  
-  .review .stars span {
-    color: #FF8803;
-  }
-  
-  .review .stars .muted {
-    color: #ccc;
-  }
-  
-  .review .review-user img {
-    width: 70px;
-    margin: 0 auto;
-  }
-  
-  /* Testimonial Carousel */
-  .testimonials-slider .swiper-pagination {
-    margin-top: 20px;
-    position: relative;
-  }
-  
-  .testimonials-slider .swiper-pagination .swiper-pagination-bullet {
-    width: 12px;
-    height: 12px;
-    background-color: #fff;
-    opacity: 1;
-    border: 1px solid #2d71a1;
-  }
-  
-  .testimonials-slider .swiper-pagination .swiper-pagination-bullet-active {
-    background-color: #2d71a1;
-  }
-  
+.testimonials:before {
+    position: absolute;
+    left: -150px;
+    top: 16%;
+    background-image: url(http://t.commonsupport.com/adro/images/icons/ring-circle.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 701px;
+    height: 756px;
+    content: "";
+    -webkit-animation: fa-spin 25s infinite alternate;
+      -moz-animation: fa-spin 25s infinite alternate;
+      -ms-animation: fa-spin 25s infinite alternate;
+      -o-animation: fa-spin 25s infinite alternate;
+      animation: fa-spin 25s infinite alternate;
 
+}
 
-  
-section {
+.testimonials .testimonials-slider {
     overflow: hidden;
+}
+
+.testimonials .testimonial-item {
+    box-sizing: content-box;
+    padding: 30px;
+    margin: 30px 15px;
+    min-height: 200px;
+    box-shadow: 0px 2px 12px rgba(0,0,0,0.08);
+    position: relative;
+    background: #fff;
+    border-radius: 15px;
+}
+
+.testimonials .testimonial-item .testimonial-img {
+    width: 90px;
+    border-radius: 10px;
+    border: 6px solid #fff;
+    float: left;
+    margin: 0 10px 0 0;
+}
+
+.testimonials .testimonial-item .test-h3 {
+    font-size: 10px;
+    font-weight: bold;
+    margin: 25px 0 5px 0;
+    color: #111;
+}
+
+.testimonials .testimonial-item .test-h4 {
+    font-size: 14px;
+    color: #999;
+    margin: 0;
   }
-  
-  .section {
-    padding: 7rem 0;
-  }
-  
-  .section-heading {
-    font-size: 3rem;
-    font-weight: 700;
-    background: linear-gradient(-45deg, #3db3c5, #274685);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
+
+ 
+.testimonials .testimonial-item .quote-icon-left,
+.testimonials .testimonial-item .quote-icon-right {
+  color: #fceaea;
+  font-size: 26px;
+}
+
+.testimonials .testimonial-item .quote-icon-left {
+  display: inline-block;
+  left: -5px;
+  position: relative;
+}
+
+.testimonials .testimonial-item .quote-icon-right {
+  display: inline-block;
+  right: -5px;
+  position: relative;
+  top: 10px;
+}
+
+.testimonials .testimonial-item p {
+  font-style: italic;
+  margin: 30px auto 15px auto;
+}
+
+.testimonials .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.testimonials .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  border: 1px solid #e03a3c;
+}
+
+.testimonials .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #e03a3c;
+}
+ 
 
 /* End Testimonials */

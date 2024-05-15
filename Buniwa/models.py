@@ -4,13 +4,9 @@ class theBlog(models.Model):
     title = models.CharField(max_length=20)
     category = models.CharField(max_length=100)
     # content = models.TextField()
-class Card(models.Model):
-    title = models.CharField(max_length=50)
-    category = models.CharField(max_length=100)
-    content = models.TextField()
     author = models.CharField(max_length=100)
     published_date = models.DateField()
-    card_image = models.ImageField(upload_to='card_images/')
+    blog_image = models.ImageField(upload_to='card_images/')
     author_image = models.ImageField(upload_to='author_images/')
 
     def __str__(self):

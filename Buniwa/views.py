@@ -3,7 +3,6 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth import authenticate,login,logout
 from .models import theBlog
 from django.contrib.auth.models import User
-from .models import Card
 from .models import PortfolioPost
 from .models import theTeam
 

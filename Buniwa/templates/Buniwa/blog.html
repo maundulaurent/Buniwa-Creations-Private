@@ -42,7 +42,7 @@
 
     <!-- ======= Blog Section ======= -->
     <section id="blog" class="blog">
-      <div class="container" data-aos="fade-up">
+      <div class="container wow bounceInUp" >
 
         <div class="row gy-4 posts-list">
           <!-- Loop through each card dynamically -->
@@ -51,8 +51,7 @@
             <article>
 
               <div class="post-img">
-<<<<<<< HEAD
-                <img src="{{ card.card_image.url }}" alt="" class="img-fluid" style="width: 355px; height: 330px;">
+                <img src="{{ card.blog_image.url }}" alt="" class="img-fluid" style="width: 355px; height: 330px;">
               </div>
               <p class="post-category">{{ card.category }}</p>
               <h2 class="title">
@@ -61,21 +60,28 @@
 
               <div class="d-flex align-items-center">
                 <img src="{{ card.author_image.url }}" alt="" class="img-fluid post-author-img flex-shrink-0" style="width: 50px; height: 50px;">
-=======
-                <img src="{{ card.card_image.url }}" alt="" class="img-fluid">
-              </div>
-              <p class="post-category">{{ card.category }}</p>
-              <h2 class="title">
-                <a href="blog_details" class="text-decoration-none">{{ card.title }}</a>
-              </h2>
 
-              <div class="d-flex align-items-center">
-                <img src="{{ card.author_image.url }}" alt="" class="img-fluid post-author-img flex-shrink-0">
->>>>>>> 2a242e0ccc7c1ec90306a6f34bff775db59f3b49
                 <div class="post-meta">
                   <p class="post-author-list">{{ card.author }}</p>
                   <p class="post-date">
-                    <!-- <time datetime="2022-01-01">Jun 5, 2022</time> -->
+
+                    
+
+
+                    <!-- <img src="{{ card.card_image.url }}" alt="" class="img-fluid">
+                  </div>
+                  <p class="post-category">{{ card.category }}</p>
+                  <h2 class="title">
+                    <a href="blog_details" class="text-decoration-none">{{ card.title }}</a>
+                  </h2>
+    
+                  <div class="d-flex align-items-center">
+                    <img src="{{ card.author_image.url }}" alt="" class="img-fluid post-author-img flex-shrink-0"> -->
+
+
+
+
+ 
                     <time datetime="{{ card.published_date }}">{{ card.published_date }}</time>
                   </p>
                 </div>
