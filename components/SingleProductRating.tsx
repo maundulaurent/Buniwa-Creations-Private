@@ -1,4 +1,4 @@
-******************
+
 
 import React from "react";
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
