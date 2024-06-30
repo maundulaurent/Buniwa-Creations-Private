@@ -1,5 +1,5 @@
-COCO Technology eCommerce
-An overview of the system.
+**COCO eccommerce Technology eCommerce**
+Landing Page of the system.
 
 
 ![coco1](https://github.com/maundulaurent/NEXT.JS-TECHNOLOGY-ECCOMERCE/assets/79078172/5b1d3f41-8945-4470-b264-11c1eef3ce04)
@@ -15,9 +15,14 @@ Fully Functional Admin Panel
 
 
 
-Responsive Design
+**Responsive Design**
+
+The system is device responsive.
+
+
+![cocoresponsive](https://github.com/maundulaurent/NEXT.JS-TECHNOLOGY-ECCOMERCE/assets/79078172/a118198e-ccaf-4257-bbd8-575dcfcd20c8)
+
 Open-Source
-SEO-Friendly
 Scalable and Performant
 Why Next.js for eCommerce?
 Next.js is an excellent choice for developing custom eCommerce solutions due to its performance, SEO-friendliness, ease of development and deployment, superior developer experience, and scalability.
