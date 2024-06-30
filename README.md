@@ -22,6 +22,18 @@ The system is device responsive.
 
 ![cocoresponsive](https://github.com/maundulaurent/NEXT.JS-TECHNOLOGY-ECCOMERCE/assets/79078172/a118198e-ccaf-4257-bbd8-575dcfcd20c8)
 
+
+
+
+Has an effective login system
+
+![cocosignup](https://github.com/maundulaurent/NEXT.JS-TECHNOLOGY-ECCOMERCE/assets/79078172/81ae79e2-5299-4606-93b9-b5bd6d780dd3)
+
+and a similar login system.
+
+
+
+
 Open-Source
 Scalable and Performant
 Why Next.js for eCommerce?
