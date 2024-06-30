@@ -1,9 +1,20 @@
 COCO Technology eCommerce
+An overview of the system.
+
+
+![coco1](https://github.com/maundulaurent/NEXT.JS-TECHNOLOGY-ECCOMERCE/assets/79078172/5b1d3f41-8945-4470-b264-11c1eef3ce04)
+
+
 
 COCO Technology is a Next.js and Node.js full-stack e-commerce platform with a fully functional admin panel. This open-source application is responsive and manually tested, making it an ideal template or boilerplate for your next project. Download it for free and customize it to meet your needs.
 
 Key Features
 Fully Functional Admin Panel
+
+![coco admin](https://github.com/maundulaurent/NEXT.JS-TECHNOLOGY-ECCOMERCE/assets/79078172/1ec41c83-1538-4b1c-8337-9589fecc97b4)
+
+
+
 Responsive Design
 Open-Source
 SEO-Friendly
